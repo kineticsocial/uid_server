@@ -1,0 +1,5 @@
+% Information of group(data center) id and node id of hosts
+% host name must be unique, and assigned group id and host id must be also unique
+[ 
+	{"allen",12,1} % {server_name, group_id, node_id}
+].

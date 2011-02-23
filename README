@@ -1,0 +1,5 @@
+compile
+	mkdir ebin
+	erlc -DTEST -o ./ebin src/*.erl
+run test
+	erl -noshell -pa ebin -eval 'eunit:test(uid_server,[verbose]).' -s init stop
