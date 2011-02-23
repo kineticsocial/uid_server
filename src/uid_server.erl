@@ -312,7 +312,7 @@ forwarding_id_generation_test_with_server_up_and_running_test() ->
 	?assertEqual( ok, Result),
 	?MODULE:stop().
 
-repeat_id_generation(Count,Max, LastId) ->
+repeat_id_generation(Count, Max, LastId) ->
 	UniqueId = ?MODULE:get(),
 	if
 		Count  >  Max -> ok;
